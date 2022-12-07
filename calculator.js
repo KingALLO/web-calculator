@@ -1,4 +1,4 @@
-let result = document.getElementsById("input-text");
+let result = document.getElementById("input");
 
 let calculate = (number) => {
     result.value += number;
