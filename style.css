@@ -8,6 +8,33 @@
     background-color: #252525;
 }
 
+.navbar {
+    display: flex; /* Flexbox aktivieren (Nötig für diverse Eigenschaften) */
+    justify-content: center; /* Horizontale Ausrichtung */
+    align-items: center; /* Vertikale Ausrichtung */
+    padding-top: 30px; /* Abstand oben */
+    padding-inline: 10%;
+    gap: 6rem; /* Abstand zwischen den Links */
+}
+
+a {
+    color: #cccccc; /* Linkfarbe */
+    text-decoration: none; /* Link Unterstreichung : aus */
+    font-size: 20px; /* Schriftgröße */
+    font-weight: 500; /* Schriftstärke (Dickheit) */
+    padding: 10px; /* Abstand zwischen den Links */
+    transition: all 0.3s; /* Übergangseffekt */
+}
+
+a:hover {
+    color: #ff2800; /* Linkfarbe beim hovern */
+    text-shadow: 0 0 50px #ff2600; /* Textschatten */  
+}
+
+i {
+    color: inherit;
+}
+
 .glass{
     background: rgba(0, 0, 0, 0.2);
     border-radius: 16px;
