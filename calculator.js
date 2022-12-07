@@ -1,10 +1,31 @@
-let result = document.getElementById("input");
+const result = document.getElementById("input");
 
-let calculate = (number) => {
-    result.value += number;
+const calculate = (number) => {
+    return (checkOp(number) 
+    && checkOp(result.value[result.value.length - 1])) ? 
+    null : result.value += number;
 }
 
-let Result = () => {
+function checkOp(str){
+    switch (str) {
+        case "+":
+            return true;
+        case "-":
+            return true;
+        case "*":
+            return true;
+        case "/":
+            return true;
+        case "%":
+            return true;
+        case ".":
+            return result.value[result.value.length - 1] == "." ? true : false;
+        default:
+            return false;
+    }
+}
+
+const Result = () => {
     try{
         result.value = eval(result.value);
     } catch (err) { 
