@@ -27,8 +27,8 @@ a {
 }
 
 a:hover {
-    color: #ff2800; /* Linkfarbe beim hovern */
-    text-shadow: 0 0 50px #ff2600; /* Textschatten */  
+    color: #120333; /* Linkfarbe beim hovern */
+    text-shadow: 0 0 50px #1c054d; /* Textschatten */  
 }
 
 i {
